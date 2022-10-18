@@ -1,0 +1,238 @@
+/* fuentes */
+@font-face {
+    font-family: forresta;
+    src: url(./fonts/forresta/Forresta-Regular-PersonalUse.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: MADEOkine;
+    src: url(./fonts/made_okine_sans/MADEOkineSansPERSONALUSE-Medium.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Mistycgate;
+    src: url(./fonts/mystic_gate/Mystic\ Gate.ttf);
+    font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+    font-family: vakoMAVE;
+    src: url(./fonts/vako_mave/Vako-Mave.ttf);
+    font-style: normal;
+  font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: MADEOkine;
+    color: #fff;
+    background-color: #111;
+}
+/* NAVEGACION HEADER*/
+.navbar {
+    background-color: #111;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 5em;
+    width: 100%;
+    z-index: 5;
+}
+.navbar .logo {
+    display: flex;
+    font-family: forresta;
+    letter-spacing: 8px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    grid-column: 2 / 4;
+    color: #fff;
+    transition: all 0.3s linear;
+    filter: brightness(70%);
+}
+.navbar .logo:hover {
+    font-size: 2em;
+    filter: brightness(1);
+}
+.navbar .menu {
+    grid-column: 4 / 10;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .menu li {
+    list-style: none;
+    font-family: vakoMAV;
+    letter-spacing: 4px;
+}    
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    filter: brightness(80%);
+    transition: all 0.4s linear;
+} 
+.navbar .menu a:hover {
+    border-radius: 12px;
+    filter: brightness(1.2);
+    color: rgb(236, 172, 21);
+}
+@media only screen and (max-width: 600px) {
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #111;
+        grid-column: 1 / 10;
+    }
+    .navbar .menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #111;
+        margin-left: -2.5em;
+        flex-wrap: wrap;
+        grid-column: 1 / 10;
+        font-size: 0.8em;
+      }
+}
+/* MAIN INICIO */
+main {
+    margin-top: 5em;
+    margin-bottom: 1.6em;
+}
+.main__imagen {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+.video-inicio {
+    width: 100%;
+}
+
+.mayor-exito {
+    text-align: center;
+}
+.mayor-exito h2 {
+    font-family: Mistycgate;
+    font-size: 5em;
+}
+.mayor-exito p {
+    font-size: 2em;
+}
+/* MAIN INTEGRANTES */
+main .main__integrantes {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+    margin-top: 5em;
+    margin-bottom: 1.6em;
+}
+.container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 30px;
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #fff;
+}
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(236, 172, 21);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fff;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a {
+    color: #f3f3f3;
+}
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: forresta;
+}
+.card .back p {
+    letter-spacing: 1px;
+    font-family: Mistycgate;
+}
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+/* MAIN DISCOGRAFIA */
+
+/* PIE DE PAGINA */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+footer svg {
+    background: #fff;
+    color: #111;
+    padding: 8px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+}  
+
