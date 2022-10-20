@@ -30,6 +30,8 @@ body {
     font-family: MADEOkine;
     color: #fff;
     background-color: #111;
+    box-sizing: border-box;
+    
 }
 /* NAVEGACION HEADER*/
 .navbar {
@@ -59,6 +61,7 @@ body {
 .navbar .logo:hover {
     font-size: 2em;
     filter: brightness(1);
+
 }
 .navbar .menu {
     grid-column: 4 / 10;
@@ -125,13 +128,16 @@ main {
 }
 .mayor-exito p {
     font-size: 2em;
+    font-style: italic;
 }
 /* MAIN INTEGRANTES */
-main .main__integrantes {
+
+.main__integrantes{
+    background: url(./images/fondo-integrantes2.webp);
+    background-size: cover;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #111;
     margin-top: 5em;
     margin-bottom: 1.6em;
 }
@@ -158,7 +164,7 @@ main .main__integrantes {
 }
 .card .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #fff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card .front img {
     position: absolute;
@@ -178,14 +184,15 @@ main .main__integrantes {
 }
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(236, 172, 21);
+    background-color: rgba(255, 255, 255, 0.060);
+    backdrop-filter: blur(1rem);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px #fff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card .back .link{
     border-top: solid 1px #f3f3f3;
@@ -212,23 +219,121 @@ main .main__integrantes {
     transform: perspective(600px) rotateY(360deg);
 }
 /* MAIN DISCOGRAFIA */
+.discografia__completo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.disco1 {
+   position: relative;
+   height: 250px;
+   width: 350px;
+   overflow: hidden;
+   border-radius: 8px;
+   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+   cursor: pointer;
+}
+.discografia__completo .disco1 img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    padding: 20px;
+}
+.discografia__completo .disco1 .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.discografia__completo .disco1:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.discografia__completo .disco1:hover > img {
+    transform: scale(1.3);
+}
+.discografia__completo .disco1:hover > .capa h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
 
+.discografia__completo .disco1 .capa h2 {
+    color: #fff;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 60px;
+    font-family: Mistycgate;
+}
+
+.discografia__completo .disco1 .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    font-family: MADEOkine;
+}
+.discografia__completo .disco1 .capa a {
+    color: #fff;
+    font-family: Mistycgate;
+    padding: 10px;
+}
+/* MAIN HISTORIA */
+  .main__historia p {
+    margin: 2em;
+  }
+  .titulo__historia {
+    text-align: center;
+    background: #fff;
+    color: #111;
+    font-family: vakoMAVE;
+    padding: 10px;
+  }
+  .main__historia {
+    text-align: center;
+  }
+  hr {
+    height: 5px;
+    background-color: #fff;
+  }
+
+/* MAIN CONTACTO */
+.bodyyy {
+    background: #ffe259;
+    background: linear-gradient(to right, #ffa751, #ffe259);
+}
+.bg{
+    background-image: url(/images/fondocontacto.jpg);
+    background-position: center center;
+}
 /* PIE DE PAGINA */
+.container-footer {
+    background-color: #222;
+}
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #111;
+    background: #222;
     color: #fff;
     text-align: center;
     width: 100%;
     margin-top: auto;
-    border-top: solid 1px #f3f3f3;
+    border-top: solid 1px #333;
     height: 50px;
     line-height: 50px;
 }
 footer svg {
     background: #fff;
-    color: #111;
+    color: #222;
     padding: 8px;
     border-radius: 50%;
     width: 15px;

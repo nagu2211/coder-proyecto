@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rata Blanca</title>
     <link rel="stylesheet" href="../stiles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
 </head>
 <body>
@@ -23,7 +24,7 @@
      </header>
      <main class="main__integrantes">
         <div class="container__cards">
-        <div class="card">
+        <div class="card animate__animated animate__backInLeft">
             <div class="face front cantante">
                 <img src="../images/adrianbarilari.jfif" alt="adrianbarilari">
                 <h3>Adrian Barilari</h3>
@@ -40,7 +41,7 @@
                 </div> 
         </div>
         
-        <div class="card">
+        <div class="card animate__animated animate__backInDown animate__delay-2s">
             <div class="face front guitarrista">
                 <img src="../images/waltergiardino.jpg" alt="adrianbarilari">
                 <h3>Walter Giardino</h3>
@@ -57,7 +58,7 @@
             </div> 
         </div>
         
-        <div class="card">
+        <div class="card animate__animated animate__backInRight animate__delay-1s">
             <div class="face front">
                 <img src="../images/FERNANDO SCARCELLA.webp" alt="adrianbarilari">
                 <h3>Fernando Scarcella</h3>
@@ -74,7 +75,7 @@
             </div> 
         </div>
 
-        <div class="card">
+        <div class="card animate__animated animate__backInLeft">
             <div class="face front">
                 <img src="../images/dANILO MOSCHEN.jpg" alt="adrianbarilari">
                 <h3>Danilo Moschen</h3>
@@ -90,7 +91,7 @@
                     </div>
             </div> 
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__backInRight animate__delay-1s">
             <div class="face front">
                 <img src="../images/Pablo Motyczak.webp" alt="adrianbarilari">
                 <h3>Pablo Motyczak</h3>
@@ -120,5 +121,9 @@
             <p>Lorem ipsum dolor sit amet, consectet</p>
         </div>
     </footer>
+    <script src="../wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>

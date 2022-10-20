@@ -5,55 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rata blanca</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="../stiles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
-    <header class="header__contacto">
-        <div class="container logo__contacto">
-         <a href="../index.html" class="logo__contacto">VOLVER A INICIO</a>
-        </div>
-     </header>
-    <section id="contactanos" class="contact">
-            <div class="contact__image-wrapper">
-                <img src="../images/ratablanca3.jpg" alt="" class="contact__image">
+<body class="bodyyy">
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
             </div>
-            <div class="contact__right-side">
-                <h1 class="contact__title">Contactanos</h1>
-                <form action="" class="contact__form-wrapper">
-                    <div class="contact__input-line">
-                        <label for="name" class="contact__label">Name</label>
-                        <input type="text" name="name" id="name" class="contact__input">
-                    </div>
-                    <div class="contact__input-line">
-                        <label for="email" class="contact__label">Email</label>
-                        <input type="email" name="email" id="email" class="contact__input">
-                    </div>
-                    <div class="contact__input-line">
-                        <label for="asunto" class="contact__label">Asunto</label>
-                        <input type="text" name="asunto" id="asunto" class="contact__input">
-                    </div>
-                    <div class="contact__input-line">
-                        <label for="mensaje" class="contact__label">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" class="contact__input--textarea"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar mensaje" class="contact__submit-button">
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div class="container-footer">
-                <div class="redes">
-                    <a href="https://www.facebook.com/RataBlancaOfficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/ratablancaoficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/results?search_query=rata+blanca+discos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://twitter.com/RATABLANCAOFFIC" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <a href="/index.html"><img src="../images/Rata_Blanca_logo.svg.png" width="200px"alt=""></a>
                 </div>
-                <h3>contratacionesratablanca@gmail.com</h3>
-                <p>Lorem ipsum dolor sit amet, consectet</p>
-    
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>No tienes una cuenta? <a href="#">Registrate</a></span><br>
+                        <span><a href="#">Recuperar contraseña</a></span>
+                    </div>
+                </form>
+
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../images/facelogo.webp" width="32"alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../images/logogoogle.png" width="32"alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-     
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
