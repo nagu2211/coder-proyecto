@@ -311,8 +311,8 @@ main {
     background: #ffe259;
     background: linear-gradient(to right, #ffa751, #ffe259);
 }
-.bg{
-    background-image: url(/images/fondocontacto.jpg);
+.bg {
+    background-image: url(./images/fondocontacto.jpg);
     background-position: center center;
 }
 /* PIE DE PAGINA */
