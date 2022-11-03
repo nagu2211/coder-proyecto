@@ -1,0 +1,22 @@
+{
+  "name": "coderproyecto",
+  "version": "1.0.0",
+  "description": "proyecto desarrollo web",
+  "main": "index.js",
+  "scripts": {
+
+    "build": "sass scss:css",
+    
+    "watch": "sass scss:css -watch"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagu2211/coder-proyecto.git"
+  },
+  "author": "Santiago Espindola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagu2211/coder-proyecto/issues"
+  },
+  "homepage": "https://github.com/nagu2211/coder-proyecto#readme"
+}

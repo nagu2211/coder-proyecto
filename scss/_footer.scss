@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    border-top: solid 2px #333;
+    height: 50px;
+    line-height: 50px;
+    svg {
+        background: #fff;
+        color: #222;
+        padding: 8px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        margin-top: 20px;
+    }
+}

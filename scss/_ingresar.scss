@@ -1,0 +1,27 @@
+/*INGRESAR*/
+.bodyyy {
+    background: #333;
+    background: linear-gradient(to right, #5f5f5f, #171717);
+}
+
+.bg {
+    background-image: url(../images/pexels-pixabay-159376.jpg), url(../images/pexels-sebastian-ervi-1763075.jpg), url(../images/pexels-suvan-chowdhury-144428.jpg);
+    background-position: top, center, bottom;
+    background-size: 450px, 500px, 600px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.dark {
+    color: #000;
+}
+
+#dark {
+    color: #000;
+}
+dl, ol, ul {
+    margin-bottom: 0;
+}
+.main-contacto-1 {
+    margin-top: 7em;
+    margin-bottom: 1.6em;
+}

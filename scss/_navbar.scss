@@ -1,0 +1,53 @@
+/*NAVBAR CON BOOTSTRAP*/
+header {
+    margin: 0;
+}
+.banner-image {
+    background-image: url(../images/ratablanca2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(90%);
+}
+.logo {
+    font-family: $font-special;
+    color: #fff;
+    letter-spacing: 8px;
+    font-size: 1.5em;
+    transition: all 0.3s linear;
+    filter: brightness(90%);
+    &:hover {
+        font-size: 1.8em;
+        filter: brightness(1);
+    }
+}
+.menu {
+    margin-left: 137px;
+    li {
+        font-family: $font-menu;
+        letter-spacing: 2px;
+        text-shadow: #000;
+        padding: 0px 10px;
+        a {
+            transition: all 0.3s linear;
+            color: #fff;
+        }
+        a:hover {
+            font-family: $font-menu;
+            font-size: 1.1em;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+        }
+    }
+}
+.navegacion {
+    background-color: #111;
+}
+.barras {
+    color: #fff;
+}
+.icono {
+    width: 35px;
+    height: 35px;
+}
