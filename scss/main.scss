@@ -1,17 +1,8 @@
 @import "reset";
 @import "fuentes";
-// variables
-$font-titulo: vakoMAVE, sans-serif;
-$font-all: MADEOkine, sans-serif;
-$font-special: forresta, sans-serif;
-$font-menu: Mistycgate, sans-serif;
+@import "variables";
 
-body {
-    font-family: $font-all;
-    color: #fff;
-    background-color: #111;
-}
-
+@import "body";
 @import "navbar";
 @import "index";
 @import "integrantes";
